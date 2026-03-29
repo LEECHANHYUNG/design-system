@@ -1,4 +1,3 @@
-import React, { ReactNode, useState } from "react";
 import {
   useFloating,
   useHover,
@@ -12,6 +11,7 @@ import {
   autoUpdate,
   type Placement,
 } from "@floating-ui/react";
+import React, { ReactNode, useState } from "react";
 
 export interface TooltipProps {
   content: ReactNode;
@@ -20,12 +20,7 @@ export interface TooltipProps {
   children: React.ReactElement<Record<string, unknown>>;
 }
 
-export function Tooltip({
-  content,
-  placement = "top",
-  offsetValue = 8,
-  children,
-}: TooltipProps) {
+export function Tooltip({ content, placement = "top", offsetValue = 8, children }: TooltipProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const { refs, floatingStyles, context } = useFloating({
@@ -41,12 +36,7 @@ export function Tooltip({
   const dismiss = useDismiss(context);
   const role = useRole(context, { role: "tooltip" });
 
-  const { getReferenceProps, getFloatingProps } = useInteractions([
-    hover,
-    focus,
-    dismiss,
-    role,
-  ]);
+  const { getReferenceProps, getFloatingProps } = useInteractions([hover, focus, dismiss, role]);
 
   return (
     <>
