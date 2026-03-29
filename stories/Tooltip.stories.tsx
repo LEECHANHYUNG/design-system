@@ -1,10 +1,11 @@
-import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react';
-import { Tooltip } from '../src/components/tooltip';
-import type { Placement } from '@floating-ui/react';
+import type { Placement } from "@floating-ui/react";
+import type { Meta, StoryObj } from "@storybook/react";
+import React from "react";
+
+import { Tooltip } from "../src/components/tooltip";
 
 const meta: Meta<typeof Tooltip> = {
-  title: 'Components/Tooltip',
+  title: "Components/Tooltip",
   component: Tooltip,
 };
 
@@ -13,41 +14,41 @@ export default meta;
 type Story = StoryObj<typeof Tooltip>;
 
 const placements: Placement[] = [
-  'top-start',
-  'top',
-  'top-end',
-  'right-start',
-  'right',
-  'right-end',
-  'bottom-start',
-  'bottom',
-  'bottom-end',
-  'left-start',
-  'left',
-  'left-end',
+  "top-start",
+  "top",
+  "top-end",
+  "right-start",
+  "right",
+  "right-end",
+  "bottom-start",
+  "bottom",
+  "bottom-end",
+  "left-start",
+  "left",
+  "left-end",
 ];
 
 const triggerStyle: React.CSSProperties = {
-  padding: '8px 16px',
-  border: '1px solid #ccc',
-  borderRadius: '6px',
-  backgroundColor: '#f5f5f5',
-  cursor: 'pointer',
-  fontSize: '13px',
-  fontFamily: 'monospace',
+  padding: "8px 16px",
+  border: "1px solid #ccc",
+  borderRadius: "6px",
+  backgroundColor: "#f5f5f5",
+  cursor: "pointer",
+  fontSize: "13px",
+  fontFamily: "monospace",
 };
 
 export const AllPlacements: Story = {
   render: () => (
     <div
       style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, auto)',
-        gridTemplateRows: 'repeat(4, auto)',
-        gap: '12px',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: '120px 200px',
+        display: "grid",
+        gridTemplateColumns: "repeat(3, auto)",
+        gridTemplateRows: "repeat(4, auto)",
+        gap: "12px",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "120px 200px",
       }}
     >
       {/* Row 1: top-start, top, top-end */}
