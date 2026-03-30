@@ -1,33 +1,23 @@
 {
   "name": "design-system",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "license": "ISC",
-  "author": "",
+  "private": true,
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "fmt": "oxfmt --write .",
-    "fmt:check": "oxfmt --check .",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "dependencies": {
-    "@floating-ui/react": "^0.27.19",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "build": "turbo run build",
+    "fmt": "turbo run fmt",
+    "fmt:check": "turbo run fmt:check",
+    "storybook": "turbo run storybook",
+    "build-storybook": "turbo run build-storybook"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^10.3.3",
-    "@storybook/addon-docs": "^10.3.3",
-    "@storybook/addon-webpack5-compiler-swc": "^4.0.3",
-    "@storybook/react-webpack5": "^10.3.3",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
     "oxfmt": "^0.42.0",
-    "storybook": "^10.3.3",
-    "typescript": "^6.0.2"
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "pnpm@10.8.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "esbuild"
+    ]
   }
 }
