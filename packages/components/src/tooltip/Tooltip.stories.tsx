@@ -2,7 +2,7 @@ import type { Placement } from "@floating-ui/react";
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
 
-import { Tooltip } from "../src/components/tooltip";
+import { Tooltip } from "./";
 
 const meta: Meta<typeof Tooltip> = {
   title: "Components/Tooltip",
