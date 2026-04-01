@@ -3,3 +3,7 @@ dist
 storybook-static
 .worktrees
 .turbo
+
+## Panda
+styled-system
+styled-system-studio

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
+    "@design-system/core": "workspace:*",
     "@floating-ui/react": "^0.27.19",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
