@@ -1,4 +1,4 @@
-import { cva, type RecipeVariantProps } from "../styled-system/css";
+import { cva, type RecipeVariantProps } from "../../styled-system/css";
 
 export const buttonStyle = cva({
   base: {
@@ -10,6 +10,7 @@ export const buttonStyle = cva({
     cursor: "pointer",
     transition: "colors",
     _disabled: { opacity: 0.5, cursor: "not-allowed" },
+    "&[data-disabled]": { opacity: 0.5, cursor: "not-allowed" },
   },
   variants: {
     variant: {
