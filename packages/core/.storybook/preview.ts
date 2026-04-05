@@ -1,5 +1,6 @@
-import "@design-system/core/styled-system/styles.css";
 import type { Preview } from "@storybook/react-webpack5";
+
+import "../styled-system/styles.css";
 
 const preview: Preview = {
   parameters: {
